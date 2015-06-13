@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @listing.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @listing.password %>
+</p>
+
+<p>
+  <strong>Posting:</strong>
+  <%= @listing.Posting %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @listing.title %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @listing.zip %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @listing.description %>
+</p>
+
+<p>
+  <strong>Sqft:</strong>
+  <%= @listing.sqft %>
+</p>
+
+<p>
+  <strong>Rent:</strong>
+  <%= @listing.rent %>
+</p>
+
+<p>
+  <strong>Bedrooms:</strong>
+  <%= @listing.bedrooms %>
+</p>
+
+<p>
+  <strong>Bathooms:</strong>
+  <%= @listing.bathooms %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @listing.street %>
+</p>
+
+<p>
+  <strong>Xstreet:</strong>
+  <%= @listing.Xstreet %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @listing.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @listing.state %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>
