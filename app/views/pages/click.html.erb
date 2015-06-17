@@ -5,26 +5,28 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
 	<title>CL Post</title>
+
 	<script type="text/javascript">
-	function test(){
-
-
-	}
+		$( document ).ready(function() {
+			$("#watir-trigger").on("click", function() {
+				$.post("/pages/do_click", function(res) {
+					console.log(res);
+				});
+			});
+		});
 	</script>
 
 </head>
+
 <body>
 
 	
 
 
 	<!-- HTML SECTION -->
-<div class="wrapper">
-
-    <button class="button" onclick="weather.rb">CLICK</button>
-
-
-</div>
+	<div class="wrapper">
+		<button id="watir-trigger" class="button">CLICK</button>	
+	</div>
 	
 	
 	

@@ -14,7 +14,7 @@ browser.text_field(:id => 'inputEmailHandle').set 'tlembi@up-sf.com'
 browser.text_field(:id => 'inputPassword').set 'urban123'
 browser.button(:type,"submit").click 
 
-browser.select_list(:name => 'areaabb').select 'sf bay area, ca, us'
+browser.select_list(:name => 'areaabb').select 'sf bay area, ca, us' 
 browser.button(:value,"go").click 
 
 #type of posting
@@ -83,16 +83,19 @@ browser.text_field(:id => 'region').set 'CA'
 
 browser.checkbox(:id => 'copy_assign').click
 
-browser.button(:value,"Continue").click 
+browser.button(:value,"Continue").click
 
+#map
 browser.button(:class,'continue bigbutton').click 
 
-#picture upload
-#browser.button(:class,'newupl').click 
+#images
+sleep(2)
 
-#browser.file_field.set '/Users/taylorlembi/desktop/hall.png'
-#browser.file_field.set '/Users/taylorlembi/desktop/room.png'
-#browser.file_field.set '/Users/taylorlembi/desktop/bath.png'
+browser.a(text: "Use classic image uploader").click
+
+browser.file_field.set '/Users/taylorlembi/Desktop/bush1485.png'
+browser.file_field.set '/Users/taylorlembi/Desktop/bush1485_hall.png'
+browser.file_field.set '/Users/taylorlembi/Desktop/bush1485_room.png'
 
 browser.button(:value => "Done with Images").click 
 
