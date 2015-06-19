@@ -101,4 +101,3 @@ browser.button(:value => "Done with Images").click
 
 browser.button(:value => "Continue").click 
 
-

@@ -6,7 +6,8 @@ class PagesController < ApplicationController
 
   def do_click
 	rtn = `ruby weather.rb`
-
+	rtn = 'ruby postlets.rb'
+    
     puts rtn
 
   	render json: {output: rtn}
