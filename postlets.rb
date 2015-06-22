@@ -128,7 +128,7 @@ browser.button(:type => "submit").click
 browser.button(:class,'button_main').click 
 
 
-#browser.close
+browser.close
 
 #PROMOTE
 

@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def do_click
-	rtn = `ruby weather.rb`
+	rtn = `ruby weather.rb; ruby postlets.rb`
 	
     puts rtn
 
